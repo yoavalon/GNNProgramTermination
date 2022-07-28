@@ -26,3 +26,15 @@ load required dependencies to virtual environment
 ```
 python3 -m pip install -r requirements.txt
 ```
+
+#### Training
+```
+python3 train.py
+```
+
+
+#### Evaluate pretrained models 
+```
+python3 test.py
+```
+
