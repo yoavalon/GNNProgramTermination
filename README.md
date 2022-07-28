@@ -19,11 +19,7 @@ activate virtual environment
 source gnnEnv/bin/activate
 ```
 
-#show all installed packages
-pip list
-
-#extract requirement file 
-pip freeze > requirements.txt
-
-#in environment load the requirements file 
+load required dependencies to virtual environment
+```
 python3 -m pip install -r requirements.txt
+```
