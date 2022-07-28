@@ -3,6 +3,7 @@ Using Graph Neural Networks for Program Termination
 
 ![Architecture](imgs/system.png)
 
+Classifier for program termination based on Graph Attention layers. 
 
 ## Run locally
 
