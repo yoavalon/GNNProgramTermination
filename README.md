@@ -1,9 +1,10 @@
 # GNNProgramTermination
 Using Graph Neural Networks for Program Termination
 
+![Architecture](imgs/system.png)
+
 
 ## Run locally
-
 
 #### Setup virtual environment
 
