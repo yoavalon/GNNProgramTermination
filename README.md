@@ -1,6 +1,9 @@
 # GNNProgramTermination
 Using Graph Neural Networks for Program Termination
 
+
+## Run locally
+
 If not installed, install python virtual environment : 
 ```
 pip install virtualenv 
