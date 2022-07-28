@@ -5,10 +5,10 @@ If not installed, install python virtual environment :
 > pip install virtualenv 
 
 #create virtual environment with directory
-'''
+```
 python3 -m venv gnnEnv
+```
 
-'''
 
 #activate virtual environment
 source gnnEnv/bin/activate
