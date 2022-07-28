@@ -4,6 +4,9 @@ Using Graph Neural Networks for Program Termination
 
 ## Run locally
 
+
+#### Setup virtual environment
+
 If not installed, install python virtual environment : 
 ```
 pip install virtualenv 
