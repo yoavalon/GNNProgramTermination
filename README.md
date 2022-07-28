@@ -6,9 +6,8 @@ If not installed, install python virtual environment :
 
 #create virtual environment with directory
 '''
-{
 python3 -m venv gnnEnv
-}
+
 '''
 
 #activate virtual environment
