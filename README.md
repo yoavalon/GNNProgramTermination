@@ -3,7 +3,7 @@ Using Graph Neural Networks for Program Termination
 
 ![Architecture](imgs/system.png)
 
-Classifier for program termination based on Graph Attention layers. 
+Classifier for program termination based on Graph Attention layers. Published in ESEC/FSE 2022 - The 30th ACM Joint European Software Engineering Conference and Symposium on the Foundations of Software Engineering.
 https://arxiv.org/abs/2207.14648
 To cite: 
 ```
