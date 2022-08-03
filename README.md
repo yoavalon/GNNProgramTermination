@@ -4,6 +4,15 @@ Using Graph Neural Networks for Program Termination
 ![Architecture](imgs/system.png)
 
 Classifier for program termination based on Graph Attention layers. 
+https://arxiv.org/abs/2207.14648
+To cite: 
+```
+@inproceedings{Alon2022UsingGN,
+  title={Using Graph Neural Networks for Program Termination},
+  author={Yoav Alon and Cristina David},
+  year={2022}
+}
+```
 
 ## Run locally
 
