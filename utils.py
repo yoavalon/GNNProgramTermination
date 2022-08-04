@@ -57,8 +57,8 @@ def codeToDgl(filename) :
     return g, features #also return label here
 
 
-path1 = './dataset/0'
-path2 = './dataset/1'
+path1 = './datasets/DS_A/train/0'
+path2 = './datasets/DS_A/train/1'
 files1 = os.listdir(path1)[:100]
 files2 = os.listdir(path2)[:100]
 
