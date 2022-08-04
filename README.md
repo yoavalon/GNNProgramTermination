@@ -43,9 +43,9 @@ python3 -m pip install -r requirements.txt
 python3 train.py
 ```
 
-#### Training
+#### Live evaluation with Tensorboard
 ```
-python3 train.py
+tensorboard --logdir=runs
 ```
 
 
