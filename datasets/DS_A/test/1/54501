@@ -1,0 +1,15 @@
+import time
+
+x = 10
+y = 15
+y = 6
+for i in range(13) : 
+  while y > x : 
+    if x < 4 : 
+      while y > x : 
+        for i in range(11) : 
+          while y > x : 
+            if y > 9 : 
+              y = 5
+            x = 12
+            x +=1

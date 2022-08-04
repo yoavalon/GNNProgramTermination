@@ -1,0 +1,15 @@
+import time
+
+x = 3
+y = 8
+for i in range(10) : 
+  for i in range(12) : 
+    while y > x : 
+      if x < 8 : 
+        if x < 4 : 
+          if x < 8 : 
+            y = 12
+            time.sleep(2)
+          for i in range(14) : 
+            if y > 10 : 
+              x -=1

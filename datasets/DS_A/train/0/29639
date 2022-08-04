@@ -1,0 +1,15 @@
+import time
+
+x = 9
+y = 17
+for i in range(11) : 
+  x = 16
+  x +=1
+  x = 4
+x = 1
+for i in range(17) : 
+  x -=1
+  time.sleep(2)
+x +=1
+x +=1
+x +=1

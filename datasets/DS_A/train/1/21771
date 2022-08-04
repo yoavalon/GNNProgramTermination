@@ -1,0 +1,15 @@
+import time
+
+x = 5
+y = 10
+x +=1
+for i in range(3) : 
+  x = 16
+  for i in range(13) : 
+    x +=1
+    for i in range(18) : 
+      if y > 0 : 
+        for i in range(12) : 
+          for i in range(17) : 
+            x = 19
+            x +=1

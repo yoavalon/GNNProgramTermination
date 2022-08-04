@@ -1,0 +1,15 @@
+import time
+
+x = 15
+y = 13
+for i in range(8) : 
+  time.sleep(2)
+  x -=1
+  x = 0
+time.sleep(2)
+time.sleep(2)
+x -=1
+x = 1
+time.sleep(2)
+time.sleep(2)
+x +=1

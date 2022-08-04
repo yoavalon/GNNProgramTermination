@@ -1,0 +1,15 @@
+import time
+
+x = 17
+y = 17
+x -=1
+if y > 7 : 
+  if x < 3 : 
+    x +=1
+    x -=1
+    if x < 19 : 
+      for i in range(5) : 
+        for i in range(12) : 
+          x -=1
+          x -=1
+          x +=1

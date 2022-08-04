@@ -1,0 +1,15 @@
+import time
+
+x = 18
+y = 5
+x = 11
+y = 11
+time.sleep(2)
+if x < 0 : 
+  x +=1
+  x +=1
+x = 18
+x -=1
+while y > x : 
+  for i in range(4) : 
+    x +=1

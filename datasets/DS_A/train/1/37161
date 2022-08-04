@@ -1,0 +1,15 @@
+import time
+
+x = 16
+y = 6
+if y > 18 : 
+  y = 6
+  x = 0
+  for i in range(4) : 
+    while x > y : 
+      if y > 7 : 
+        x +=1
+        for i in range(8) : 
+          x = 5
+          x -=1
+          x +=1

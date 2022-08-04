@@ -1,0 +1,15 @@
+import time
+
+x = 3
+y = 4
+x +=1
+x -=1
+for i in range(4) : 
+  for i in range(11) : 
+    y = 1
+    for i in range(15) : 
+      if x < 1 : 
+        for i in range(8) : 
+          if y > 6 : 
+            x -=1
+            x -=1

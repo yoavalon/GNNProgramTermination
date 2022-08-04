@@ -1,0 +1,15 @@
+import time
+
+x = 2
+y = 4
+x = 14
+if y > 11 : 
+  y = 14
+for i in range(4) : 
+  x +=1
+  for i in range(10) : 
+    x +=1
+    if x < 3 : 
+      time.sleep(2)
+      time.sleep(2)
+      x +=1

@@ -1,0 +1,15 @@
+import time
+
+x = 8
+y = 0
+if x < 0 : 
+  while x > y : 
+    while y > x : 
+      while y > x : 
+        if y > 4 : 
+          x -=1
+          if y > 0 : 
+            if x < 17 : 
+              if x < 16 : 
+                while x > y : 
+                  x -=1

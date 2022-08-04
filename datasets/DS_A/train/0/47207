@@ -1,0 +1,15 @@
+import time
+
+x = 19
+y = 0
+time.sleep(2)
+if x < 1 : 
+  x +=1
+x +=1
+time.sleep(2)
+if y > 5 : 
+  time.sleep(2)
+  for i in range(5) : 
+    x = 2
+    x +=1
+    x -=1

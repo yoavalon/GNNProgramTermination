@@ -1,0 +1,15 @@
+import time
+
+x = 11
+y = 6
+for i in range(4) : 
+  if x < 1 : 
+    x +=1
+    time.sleep(2)
+    y = 5
+    time.sleep(2)
+  y = 4
+  time.sleep(2)
+  time.sleep(2)
+  x +=1
+  x -=1

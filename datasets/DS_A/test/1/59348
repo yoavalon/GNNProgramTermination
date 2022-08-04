@@ -1,0 +1,15 @@
+import time
+
+x = 19
+y = 4
+x -=1
+x -=1
+for i in range(15) : 
+  if y > 2 : 
+    for i in range(19) : 
+      if y > 0 : 
+        while y > x : 
+          while x > y : 
+            for i in range(0) : 
+              x -=1
+              x +=1

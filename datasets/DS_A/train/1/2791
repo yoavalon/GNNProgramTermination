@@ -1,0 +1,15 @@
+import time
+
+x = 4
+y = 11
+x +=1
+x = 18
+x +=1
+if x < 12 : 
+  if y > 7 : 
+    x = 8
+    x = 4
+    x +=1
+    for i in range(0) : 
+      for i in range(7) : 
+        x +=1

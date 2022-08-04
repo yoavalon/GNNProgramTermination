@@ -1,0 +1,15 @@
+import time
+
+x = 11
+y = 6
+y = 17
+while x > y : 
+  while y > x : 
+    x -=1
+    y = 5
+    if x < 17 : 
+      x -=1
+    if y > 0 : 
+      if x < 3 : 
+        y = 19
+        x -=1

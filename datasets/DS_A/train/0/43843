@@ -1,0 +1,15 @@
+import time
+
+x = 17
+y = 18
+for i in range(5) : 
+  time.sleep(2)
+  for i in range(5) : 
+    while y > x : 
+      time.sleep(2)
+      time.sleep(2)
+    while x > y : 
+      x = 3
+      for i in range(4) : 
+        x +=1
+        x -=1

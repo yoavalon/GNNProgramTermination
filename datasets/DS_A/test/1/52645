@@ -1,0 +1,15 @@
+import time
+
+x = 1
+y = 11
+for i in range(19) : 
+  x = 6
+  x +=1
+  if y > 19 : 
+    y = 18
+  x = 10
+  if x < 11 : 
+    if x < 6 : 
+      if x < 11 : 
+        while x > y : 
+          x -=1

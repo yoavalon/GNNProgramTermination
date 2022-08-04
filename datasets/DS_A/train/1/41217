@@ -1,0 +1,15 @@
+import time
+
+x = 7
+y = 14
+if y > 19 : 
+  for i in range(19) : 
+    while x > y : 
+      time.sleep(2)
+      for i in range(17) : 
+        if y > 6 : 
+          if x < 10 : 
+            time.sleep(2)
+            time.sleep(2)
+            x -=1
+            x -=1

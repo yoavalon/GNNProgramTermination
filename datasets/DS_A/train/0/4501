@@ -1,0 +1,15 @@
+import time
+
+x = 5
+y = 0
+for i in range(6) : 
+  for i in range(13) : 
+    for i in range(5) : 
+      while x > y : 
+        x -=1
+        x +=1
+      for i in range(5) : 
+        for i in range(16) : 
+          y = 0
+          x +=1
+          x -=1
