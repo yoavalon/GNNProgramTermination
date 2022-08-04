@@ -51,10 +51,29 @@ for ep in range(100000) :
     loss.backward()
     opt.step()
     
+    if ep % 20 == 0 : 
+
+        l = torch.squeeze(torch.Tensor(l).long())
+
+        accuracy = Accuracy()
+        acc = accuracy(logits, l)
+        writer.add_scalar('train_metrics/acc', acc, ep)
+
+        precision = Precision()
+        pre = precision(logits,l)
+        writer.add_scalar('train_metrics/precision', pre, ep)
+
+        recall = Recall()#.cuda()
+        rec = recall(logits, l)
+        writer.add_scalar('train_metrics/recall', rec, ep)
+
+        f1 = 2*(pre*rec)/(pre+rec)
+        writer.add_scalar('train_metrics/f1', f1, ep)
+    
     #evaluate on test set
     if ep % 20 == 0 : 
         
-        batchsize = 50
+        batchsize = 100
         g, l, f = getBatch(batchsize, False)
 
         model.eval()
@@ -77,7 +96,7 @@ for ep in range(100000) :
         rec = recall(logits, l)
         writer.add_scalar('metrics/recall', rec, ep)
 
-        f1 = 2*(pre*rec)/(pre+rec)  
+        f1 = 2*(pre*rec)/(pre+rec)
         writer.add_scalar('metrics/f1', f1, ep)
 
         model.train()
