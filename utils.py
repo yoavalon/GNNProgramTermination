@@ -59,22 +59,36 @@ def codeToDgl(filename) :
 
 path1 = './datasets/DS_A/train/0'
 path2 = './datasets/DS_A/train/1'
-files1 = os.listdir(path1)[:100]
-files2 = os.listdir(path2)[:100]
+path3 = './datasets/DS_A/test/0'
+path4 = './datasets/DS_A/test/1'
 
-def getBatch(n = 10) :    
+files1 = os.listdir(path1)[:500]
+files2 = os.listdir(path2)[:500]
+files3 = os.listdir(path3)[:100]
+files4 = os.listdir(path4)[:100]
+
+
+def getBatch(n = 10, train = True) :    
     
     graphs = []
     labels = []
     filenames = []
 
-    for i in range(n) :        
-        if np.random.rand() <0.5 :
-            file = os.path.join(path1, np.random.choice(files1))
-            label = np.array([0])
+    for i in range(n) :    
+        if train :     
+            if np.random.rand() <0.5 :
+                file = os.path.join(path1, np.random.choice(files1))
+                label = np.array([0])
+            else : 
+                file = os.path.join(path2, np.random.choice(files2))
+                label = np.array([1])
         else : 
-            file = os.path.join(path2, np.random.choice(files2))
-            label = np.array([1])
+            if np.random.rand() <0.5 :
+                file = os.path.join(path3, np.random.choice(files3))
+                label = np.array([0])
+            else : 
+                file = os.path.join(path4, np.random.choice(files4))
+                label = np.array([1])
 
         g, features = codeToDgl(file)
         filenames.append(file)

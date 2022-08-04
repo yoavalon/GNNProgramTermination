@@ -11,6 +11,7 @@ from torch.utils.tensorboard import SummaryWriter
 from scikitplot.metrics import plot_roc
 from scikitplot.metrics import plot_precision_recall
 from datetime import datetime
+from torchmetrics import Accuracy, Precision, Recall
 
 from model import * 
 from utils import *
@@ -23,13 +24,13 @@ writer = SummaryWriter('./runs/' + ct)
 model = GAT()
 
 #loading 
-opt = torch.optim.Adam(model.parameters(), lr=0.001)
+opt = torch.optim.Adam(model.parameters(), lr=0.001) #TODO rate to high
 lossFunc = nn.CrossEntropyLoss()
 
 for ep in range(100000) : 
 
     batchsize = 30       
-    g, l, f = getBatch(batchsize)
+    g, l, f = getBatch(batchsize, True)
     
     graphs = dgl.batch(g)    
 
@@ -39,19 +40,49 @@ for ep in range(100000) :
     labels = torch.tensor(l).long()
     loss = lossFunc(logits, labels)
 
-    writer.add_scalar('main/loss', loss, ep)
+    writer.add_scalar('0_train/loss', loss, ep)
     
     re = torch.argmax(logits, 1)
     acc = ((labels.eq(re.float())).sum()).float()/batchsize
     
-    writer.add_scalar('main/acc', acc, ep)
+    writer.add_scalar('0_train/acc', acc, ep)
 
     opt.zero_grad()
     loss.backward()
     opt.step()
     
-    #print(f'{ra} {ep} {loss.detach().numpy():0.2f} {acc:0.2f}')
+    #evaluate on test set
+    if ep % 20 == 0 : 
+        
+        batchsize = 50
+        g, l, f = getBatch(batchsize, False)
 
+        model.eval()
+        graphs = dgl.batch(g)    
+        logits, attention = model(graphs, graphs.srcdata['x'])
+
+        logits = torch.argmax(logits, dim = 1)
+
+        l = torch.squeeze(torch.Tensor(l).long())
+
+        accuracy = Accuracy()
+        acc = accuracy(logits, l)
+        writer.add_scalar('metrics/acc', acc, ep)
+
+        precision = Precision()
+        pre = precision(logits,l)
+        writer.add_scalar('metrics/precision', pre, ep)
+
+        recall = Recall()#.cuda()
+        rec = recall(logits, l)
+        writer.add_scalar('metrics/recall', rec, ep)
+
+        f1 = 2*(pre*rec)/(pre+rec)  
+        writer.add_scalar('metrics/f1', f1, ep)
+
+        model.train()
+
+    #extract graphs
     if ep % 100 == 0 : #and ep > 0 :   
         
         batchsize = 100       
