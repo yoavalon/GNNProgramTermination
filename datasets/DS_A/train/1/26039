@@ -1,0 +1,15 @@
+import time
+
+x = 6
+y = 7
+x -=1
+if y > 9 : 
+  x -=1
+  if x < 0 : 
+    time.sleep(2)
+    time.sleep(2)
+    y = 2
+    for i in range(8) : 
+      y = 15
+    x = 12
+  x -=1

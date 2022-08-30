@@ -1,0 +1,15 @@
+import time
+
+x = 5
+y = 15
+x -=1
+x = 11
+if y > 0 : 
+  if x < 15 : 
+    if y > 0 : 
+      time.sleep(2)
+      y = 10
+    if y > 8 : 
+      time.sleep(2)
+      x -=1
+    x -=1

@@ -1,0 +1,15 @@
+import time
+
+x = 6
+y = 8
+if x < 13 : 
+  if y > 0 : 
+    time.sleep(2)
+    time.sleep(2)
+    time.sleep(2)
+    x = 2
+    x = 3
+  time.sleep(2)
+y = 5
+x +=1
+x +=1

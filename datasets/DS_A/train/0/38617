@@ -1,0 +1,15 @@
+import time
+
+x = 4
+y = 14
+time.sleep(2)
+x -=1
+y = 3
+x -=1
+time.sleep(2)
+if x < 10 : 
+  y = 3
+  while x > y : 
+    time.sleep(2)
+    x = 13
+    x +=1

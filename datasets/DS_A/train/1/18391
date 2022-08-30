@@ -1,0 +1,15 @@
+import time
+
+x = 7
+y = 0
+x +=1
+for i in range(16) : 
+  if y > 6 : 
+    y = 6
+    for i in range(6) : 
+      x +=1
+      for i in range(17) : 
+        y = 3
+        if x < 16 : 
+          if x < 1 : 
+            x -=1

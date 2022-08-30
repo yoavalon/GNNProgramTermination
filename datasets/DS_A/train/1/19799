@@ -1,0 +1,15 @@
+import time
+
+x = 19
+y = 14
+while y > x : 
+  while y > x : 
+    x = 10
+    while y > x : 
+      while x > y : 
+        x +=1
+        for i in range(8) : 
+          while y > x : 
+            if x < 2 : 
+              x = 8
+              x -=1

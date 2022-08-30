@@ -1,0 +1,15 @@
+import time
+
+x = 15
+y = 11
+x +=1
+for i in range(15) : 
+  if x < 10 : 
+    if x < 6 : 
+      if y > 11 : 
+        x = 14
+        x +=1
+        for i in range(14) : 
+          if y > 14 : 
+            for i in range(11) : 
+              x +=1

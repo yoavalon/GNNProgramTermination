@@ -1,0 +1,15 @@
+import time
+
+x = 3
+y = 7
+if x < 3 : 
+  time.sleep(2)
+  y = 16
+  if x < 9 : 
+    time.sleep(2)
+    time.sleep(2)
+    if y > 14 : 
+      if x < 14 : 
+        x = 2
+      if x < 18 : 
+        x -=1

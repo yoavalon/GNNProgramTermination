@@ -1,0 +1,15 @@
+import time
+
+x = 3
+y = 2
+x +=1
+y = 2
+time.sleep(2)
+for i in range(6) : 
+  y = 0
+  time.sleep(2)
+  x -=1
+  if y > 14 : 
+    if x < 6 : 
+      if y > 4 : 
+        x +=1
