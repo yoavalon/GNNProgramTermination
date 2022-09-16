@@ -58,3 +58,7 @@ tensorboard --logdir=runs
 python3 test.py
 ```
 
+#### Evaluate test set with Tensorboard
+```
+tensorboard --logdir=tests
+```
